@@ -2,13 +2,16 @@ import React, {useState} from 'react'
 
 function Form() {
     
-    const [text, setName] = useState('')
+        const [name, setName] = useState({firstName:'', lastName:''})
   return (
     <div>
         <h1>Form</h1>
+        <h3>{name.firstName} - {name.lastName}</h3>
         <form>
-            <input onChange={(e)=>setName(e.target.value)} type="text" value={text}/>
-            <h1>{text}</h1>
+            <label>FirstName</label>
+            <input onChange={(e)=>setName({...name, firstName: e.target.value})} type="text" value={name.firstName}/>
+            <label>LastName</label>
+            <input onChange={(e)=>setName({...name, lastName: e.target.value})} type="text" value={name.lastName}/>
             <button>submit</button>
         </form>
     </div>
