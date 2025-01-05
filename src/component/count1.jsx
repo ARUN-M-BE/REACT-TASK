@@ -26,7 +26,7 @@ const Counter = () => {
     }
   
     return (
-        <div>
+        <div className='space'>
             <h1>Count</h1>
             <h3>Count Value is : {count}</h3>
             <button onClick={increment}>Increment</button>

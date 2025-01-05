@@ -4,7 +4,7 @@ function Form() {
     
     const [text, setName] = useState('')
   return (
-    <div>
+    <div className='space'>
         <h1>Form</h1>
         <form>
             <input onChange={(e)=>setName(e.target.value)} type="text" value={text}/>

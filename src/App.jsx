@@ -4,6 +4,12 @@ import './App.css'
 import Form from './component/Form'
 import Count from './component/count'
 import COntext from './component/context'
+import Reduser from './component/Reduser'
+import Form1 from './component/Form1'
+import Count1 from './component/count1'
+import COntext1 from './component/context1'
+// import Reduser1 from './component/Reduser1'
+import Form2 from './component/Form2'
 
 function App() {
 
@@ -14,6 +20,12 @@ function App() {
       <Form/>
       <Count/>
       <COntext/>
+      <Reduser/>
+      <Form1/>
+      <Form2/>
+      <Count1/>
+      <COntext1/>
+      {/* <Reduser1/> */}
     </>
   )
 }

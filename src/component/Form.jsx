@@ -4,7 +4,7 @@ function Form() {
     
         const [name, setName] = useState({firstName:'', lastName:''})
   return (
-    <div>
+    <div className='space'>
         <h1>Form</h1>
         <h3>{name.firstName} - {name.lastName}</h3>
         <form>

@@ -2,17 +2,17 @@ import React, {useState} from 'react'
 
 function Form() {
 
-    const [text, setName] = useState('')
+    const [text, setName] = useState()
 
     function handleChange() {
-       console.log('change')
+        setName(text)
     }
 
   return (
-    <div>
+    <div className='space'>
         <form>
             <input onChange={handleChange} type="text" value={text}/>
-            <h1>{text}</h1>
+            <h1>The {text}</h1>
             <button></button>
         </form>
     </div>

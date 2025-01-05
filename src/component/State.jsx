@@ -21,7 +21,7 @@ function State() {
     }
   }, [count]);
   return (
-    <div>
+    <div className='space'>
         <h1>State</h1>
         <h3>only {count} open</h3>
         <button onClick={buttonClick}>Click Me</button>
