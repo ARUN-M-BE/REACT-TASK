@@ -10,6 +10,8 @@ import Count1 from './component/count1'
 import COntext1 from './component/context1'
 // import Reduser1 from './component/Reduser1'
 import Form2 from './component/Form2'
+import Reduser2 from './component/Reduser2'
+import Prop from './component/Prop'
 
 function App() {
 
@@ -20,12 +22,13 @@ function App() {
       <Form/>
       <Count/>
       <COntext/>
-      <Reduser/>
       <Form1/>
       <Form2/>
       <Count1/>
       <COntext1/>
-      {/* <Reduser1/> */}
+      <Reduser/>
+      <Reduser2/>
+      <Prop/>
     </>
   )
 }
