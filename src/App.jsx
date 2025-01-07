@@ -15,6 +15,11 @@ import Prop from './component/Prop'
 // import Movie from './component/Movie/Movie'
 import Useref from './component/Useref'
 import Usememo from './component/Usememo'
+import Home from './component/Navication/Home'
+import Nav from './component/Navication/Nav'
+import About from './component/Navication/About'
+import Contact from './component/Navication/Contact'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
 
@@ -36,6 +41,16 @@ function App() {
       <Usememo/>
       <div className="space">
         {/* <Movie/> */}
+      </div>
+      <div className="space">
+        <Nav/>
+        <Router>
+          <Switch>
+            <Route path="/home" exact component={Home}/>
+            <Route path="/about" component={About}/>
+            <Route path="/contact" component={Contact}/>
+          </Switch>
+        </Router>
       </div>
     </>
   )
