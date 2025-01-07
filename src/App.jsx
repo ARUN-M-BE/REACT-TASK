@@ -12,20 +12,13 @@ import COntext1 from './component/context1'
 import Form2 from './component/Form2'
 import Reduser2 from './component/Reduser2'
 import Prop from './component/Prop'
-// import Movie from './component/Movie/Movie'
 import Useref from './component/Useref'
 import Usememo from './component/Usememo'
-import Home from './component/Navication/Home'
-import Nav from './component/Navication/Nav'
-import About from './component/Navication/About'
-import Contact from './component/Navication/Contact'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-
 function App() {
 
   return (
     <>
-      <h1>hoi</h1>
+      <h1>Task Branch</h1>
       <State></State>
       <Form/>
       <Count/>
@@ -39,19 +32,7 @@ function App() {
       <Prop/>
       <Useref/>
       <Usememo/>
-      <div className="space">
-        {/* <Movie/> */}
-      </div>
-      <div className="space">
-        <Nav/>
-        <Router>
-          <Switch>
-            <Route path="/home" exact component={Home}/>
-            <Route path="/about" component={About}/>
-            <Route path="/contact" component={Contact}/>
-          </Switch>
-        </Router>
-      </div>
+     
     </>
   )
 }
