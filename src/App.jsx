@@ -12,7 +12,9 @@ import COntext1 from './component/context1'
 import Form2 from './component/Form2'
 import Reduser2 from './component/Reduser2'
 import Prop from './component/Prop'
-import Movie from './component/Movie/Movie'
+// import Movie from './component/Movie/Movie'
+import Useref from './component/Useref'
+import Usememo from './component/Usememo'
 
 function App() {
 
@@ -30,8 +32,10 @@ function App() {
       <Reduser/>
       <Reduser2/>
       <Prop/>
+      <Useref/>
+      <Usememo/>
       <div className="space">
-        <Movie/>
+        {/* <Movie/> */}
       </div>
     </>
   )
