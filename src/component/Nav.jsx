@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
-    <div className='space'>
+    <>
         <nav className='navbar'>
-        <h1>Nav</h1>
+        <h1 className=''>Nav</h1>
           <ul>
             <li>
               <Link to="/home" className='link'>Home</Link>
@@ -19,7 +19,7 @@ function Nav() {
             </li>
           </ul>
         </nav>
-    </div>
+    </>
   )
 }
 
